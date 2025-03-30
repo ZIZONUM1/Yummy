@@ -24,6 +24,7 @@ body {
 .sidelinks {
     width: 85%;
     background-color: #0D0D0D;
+    overflow-y: hidden;
 }
 
 .LoadingScreen {
@@ -105,6 +106,45 @@ margin-top: 30px;
 #searchLetter,#searchName{
     margin-top: 30px;
 }
+.backToTop{
+ width: 40px;
+ height: 40px;
+ position: fixed;
+ border-radius: 30%;  
+ background-color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ bottom: 10px;
+ right: 15px;
+ cursor: pointer;
+ display: none;
+ z-index: 999999;
+}
+.LinksParent{
+    position: relative;
+    height: 60%;
+}
+.navLinks{
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    height: 100%;
+ }
+ 
+ .navLinks1{
+     position: relative;
+     height: 30px;
+ 
+ }
+ .navLinks1 p{
+     position: absolute;
+     top: 700%;
+     height: 100%;
+     z-index: 99999;
+     color: white;
+ }
 @media screen and (max-width:1000px) {
     .sideBar {
         width: 50% !important;

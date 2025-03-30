@@ -18,6 +18,7 @@ export default function Sidebar() {
             $('.bars').html('<i class="fa fa-close text-center fa-3x"></i>');
         }
        else if($('.sideBar').css('left')=='0px'){
+        $('.navLinks1 p').animate({top:'700%'},400);
         $('.sideBar').animate({left:-navLinkswidth},600)
         $('.bars').html('<i class="fa-solid fa-bars fa-3x"></i>');
         $('.foodcontainer').css('margin-left',barswidth);   
