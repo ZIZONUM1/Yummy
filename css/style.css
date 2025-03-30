@@ -1,0 +1,149 @@
+body {
+    overflow: hidden;
+    background-color: #0D0D0D;
+}
+
+.sideBar {
+    background-color: #0D0D0D;
+    z-index: 999999;
+    height: 100vh;
+}
+
+.sidelogo {
+    width: 15%;
+    background-color: white;
+    
+}
+
+
+.bars,.sidelinks li,.Share{
+    cursor: pointer;
+}
+
+
+.sidelinks {
+    width: 85%;
+    background-color: #0D0D0D;
+}
+
+.LoadingScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D0D0D;
+    z-index: 999999;
+}
+
+.Food {
+    cursor: pointer;
+}
+
+.foodLayer {
+    transform: translateY(100%);
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.Food:hover .foodLayer {
+    transform: translateY(0%);
+}
+
+.Recipes,
+.Tags {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Recipes li {
+    background-color: #CFF4FC;
+    color: #0575B1;
+    padding: 0px 5px;
+    margin: 0px 5px 15px 0px;
+    font-size: 18px;
+    font-weight: lighter;
+    border-radius: 10px;
+    text-align: center;
+}
+.foodLayer2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.myInputs{
+margin-top: 30px;
+
+}
+
+.myBtn{
+    background-color: #0D0D0D;
+    color: #82232b;
+    border: 1px solid #7e232a;
+    cursor: default !important;
+}
+.myInputs::placeholder{
+    color: aliceblue;
+}
+.Tags li {
+    background-color: #F8D7DA;
+    color: #842029;
+    width: fit-content;
+    margin: 0px 5px 5px 0px;
+    font-size: 18px;
+    font-weight: lighter;
+    border-radius: 10px;
+    text-align: center;
+}
+#searchLetter::placeholder,#searchName::placeholder{
+    color: white;
+}
+#searchLetter,#searchName{
+    margin-top: 30px;
+}
+@media screen and (max-width:1000px) {
+    .sideBar {
+        width: 50% !important;
+    }
+
+    .sidelogo {
+        width: 10%;
+    }
+
+    .sidelinks {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .sidelogo {
+        width: 15%;
+    }
+
+    .sidelinks {
+        width: 85%;
+    }
+
+    .Recipes li,
+    .Tags li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .sidelogo {
+        width: 20%;
+    }
+.bars{
+    margin: auto;
+    font-size:10px;
+}
+    .sidelinks {
+        width: 80%;
+        font-size: 12px;
+    }
+}
