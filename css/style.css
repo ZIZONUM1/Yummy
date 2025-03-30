@@ -172,6 +172,9 @@ margin-top: 30px;
     .Tags li {
         font-size: 12px;
     }
+    .backToTop{
+        bottom: 25px;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -185,5 +188,8 @@ margin-top: 30px;
     .sidelinks {
         width: 80%;
         font-size: 12px;
+    }
+    .backToTop{
+        bottom: 25px;
     }
 }
